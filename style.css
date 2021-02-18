@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: hsl(257, 40%, 49%);
+}
+header {
+  background: url("./images/bg-desktop.svg") no-repeat center center/cover;
+  height: 100vh;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+.navbar img {
+  margin-top: 2rem;
+}
+.content {
+  width: 90%;
+  margin: auto;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-content {
+  margin-top: 70px;
+}
+.right-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  color: #fff;
+}
+.right-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+.right-content p {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin-bottom: 0.5rem;
+}
+.right-content .btn {
+  margin-top: 1rem;
+  display: inline;
+  text-align: center;
+  width: 50%;
+  background: #fff;
+  color: hsl(257, 40%, 49%);
+  padding: 1.5rem 3rem;
+  font-size: 26px;
+  text-decoration: none;
+  border-radius: 50px;
+  letter-spacing: 2;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.right-content .btn:hover {
+  background: hsl(300, 69%, 71%);
+  color: #fff;
+}
+.socials {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.socials a .fab {
+  color: #fff;
+  margin-right: 10px;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.socials a .fab:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+@media screen and (max-width: 700px) {
+  header {
+    background: url("./images/bg-mobile.svg") no-repeat cover;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-content {
+    width: 50%;
+  }
+  .left-content img {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  .right-content {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .right-content h1 {
+    font-size: 2rem;
+  }
+  .right-conten p {
+    font-size: 1.5rem;
+  }
+  .right-content .btn {
+    width: 75%;
+    font-size: 1srem;
+    padding: 0.75rem 1.5rem;
+  }
+  .socials {
+    display: block;
+    width: 65%;
+    margin: auto;
+  }
+}
